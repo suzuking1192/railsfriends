@@ -1,0 +1,22 @@
+<h1>お問い合わせ</h1>
+
+<%= form_for @contact do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name, required: true %>
+
+  <br>
+
+  <%= f.label :email %><br>
+  <%= f.text_field :email, required: true %>
+
+  <br>
+
+  <%= f.label :message %><br>
+  <%= f.text_field :message, as: :text %>
+
+  <br>
+
+  <%= f.submit '送信', class:'btn btn-secondary' %>
+
+
+<% end %>
